@@ -3,7 +3,7 @@
     <header-bar />
     <head-footer />
     <rotation-chart />
-    <router-view/>
+    <two-menu />
   </div>
 </template>
 

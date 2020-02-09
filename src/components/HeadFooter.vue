@@ -33,6 +33,7 @@ export default {
     background-color: #fff;
     display: flex;
     justify-content: space-between;
+    box-shadow: 0 0 1px #ccc;
 }
 .headfooter .right .seach input{
     border: 1px solid rgb(233, 230, 230);
