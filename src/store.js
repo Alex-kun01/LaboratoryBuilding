@@ -51,6 +51,28 @@ export default new Vuex.Store({
         menu: ['Swift', 'Windows', 'Electron', 'Android', 'R', 'Julia'],
         class: ['R 语言基础入门', '基础R的高级数据管理', '对英国房屋价格建模并预测', '使用 GitHub 实现团队 Coding Review 流程']
       }
+    ],
+    staticList: [
+      {
+        img: 'https://dn-simplecloud.shiyanlou.com/course/1545727530595_%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E6%8C%96%E6%8E%98.png',
+        content: '6周成为数据分析与挖掘工程师',
+        foot: '最近班次： 3月5日'
+      },
+      {
+        img: 'https://dn-simplecloud.shiyanlou.com/course/1552548895361_%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_15525486676209.png',
+        content: '11周从0基础到Linux运维工程师',
+        foot: '最近班次： 2月18日'
+      },
+      {
+        img: 'https://dn-simplecloud.shiyanlou.com/course/1565168718677_%E6%A5%BC%E2%80%94%E2%80%94%E9%A6%96%E9%A1%B5.png',
+        content: '6周成为深度学习工程师',
+        foot: '最近班次： 3月16日'
+      },
+      {
+        img: 'https://dn-simplecloud.shiyanlou.com/course/1552548866160_%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_15525486809695.png',
+        content: '11周成为Python初级工程师',
+        foot: '最近班次： 3月12日'
+      }
     ]
   },
   mutations: {

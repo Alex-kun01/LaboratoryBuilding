@@ -27,6 +27,7 @@
         </div>
       </li>
     </ul>
+    <p class="footer"><a href="#">经管专区</a></p>
   </div>
 </template>
 <script>
@@ -60,13 +61,14 @@ export default {
       var class2 = document.getElementsByClassName('six')
       // eslint-disable-next-line no-unused-vars
       var class3 = document.getElementsByClassName('seven')
+      // 移出6、7号身上的class样式
       if (index === 5) {
         class2 = class2.replace('six', '')
         class3 = class3.replace('seven', '')
-      } else if (index === 6) {
+      } else if (index === 6) { // 移出5、7号身上的样式
         class1 = class1.replace('five', '')
         class3 = class3.replace('seven', '')
-      } else if (index === 7) {
+      } else if (index === 7) { // 移出 5、6号身上的样式
         class1 = class1.replace('five', '')
         class2 = class2.replace('six', '')
       }
@@ -160,5 +162,23 @@ export default {
 .menuList .cate-item .cate-list.seven{
   top: -163px;
 }
-
+.menuList .footer a{
+  color: #fff;
+  font-size: 13px;
+}
+.menuList .footer{
+  border: 1px solid #fff;
+  display: inline-block;
+  line-height: 13px;
+  padding: 4px 8px;
+  border-radius: 10px;
+  margin-left: 95px;
+  margin-top: 13px;
+}
+.menuList .footer:hover{
+  background-color: #fff;
+}
+.menuList .footer:hover a{
+  color: #555;
+}
 </style>
