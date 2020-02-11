@@ -73,7 +73,61 @@ export default new Vuex.Store({
         content: '11周成为Python初级工程师',
         foot: '最近班次： 3月12日'
       }
-    ]
+    ],
+    dycList: {
+      f1: [
+        {
+          img: 'https://dn-simplecloud.shiyanlou.com/course/1542593215523_%E3%80%90614%E3%80%91-%E3%80%90Python%E5%AE%9E%E7%8E%B0%E9%94%AE%E5%80%BC%E6%95%B0%E6%8D%AE%E5%BA%93%E3%80%91.png',
+          content: 'Python3 实现键值数据库',
+          text: ' 本课程将通过理解一个操作类似于 Redis，存储理念来自于 CouchDB 的键值数据库的源代码来学习如何做数据库的数据存储，体会使用不可变数据结构的优点。',
+          number: 5874,
+          color: 'green',
+          paic: '免费'
+        },
+        {
+          img: 'https://dn-simplecloud.shiyanlou.com/course/1539678114813_[1166]-[C++-%E5%AE%9E%E7%8E%B0-STL-%E5%BA%93%E7%9A%84%E7%BB%84%E4%BB%B6%E5%92%8C%E7%AE%97%E6%B3%95].jpg',
+          content: 'C++ 实现 STL 标准库和算法',
+          text: ' 本课程主要讲解了C++ STL的容器和算法的实现，通过本课程可以快速掌握顺序容器vector、list 和 deque 以及关联容器 set 和 map 等，更有迭代器和算法的讲解。 ',
+          number: 3263,
+          color: 'green',
+          paic: '免费'
+        }
+      ],
+      f2: [
+        {
+          img: 'https://dn-simplecloud.shiyanlou.com/courses/uid214893-20191014-1571044901528',
+          content: ' TensorFlow 2 深度学习入门与实践',
+          text: ' TensorFlow 是由谷歌在 2015 年 11 月发布的深度学习开源工具，我们可以用它来快速构建深度神经网络，并训练深度学习模型。2019 年，TensorFlow 正式推出了 2.0 版本，也意味着 TensorFlow 从 1.x 正式过度到 2.x 时代。 ',
+          number: 229,
+          color: 'red',
+          paic: '训练营'
+        },
+        {
+          img: 'https://dn-simplecloud.shiyanlou.com/1470631844655.png',
+          content: ' C++ 开发 Web 服务框架 ',
+          text: ' 服务器开发中 Web 服务是一个基本的代码单元，将服务端的请求和响应部分的逻辑抽象出来形成框架，能够做到最高级别的框架级代码复用。本次项目将综合使用 C++11 及 Boost 中的 Asio 实现 HTTP 和 HTTPS 的服务器框架。 ',
+          number: 4342,
+          color: 'yellow',
+          paic: '会员'
+        },
+        {
+          img: 'https://dn-simplecloud.shiyanlou.com/courses/uid770606-20191205-1575541847039',
+          content: ' Spring Cloud 与 Docker 实战',
+          text: ' 本课程主要讲解如何通过实验的方式实战 Spring Boot/Cloud 并结合 Docker 使用。课程包含了服务注册于发现中心 Eureka，Spring Boot Actuator 监控端点，Ribbon 客户端负载均衡，Feign 声明式 REST 调用，Docker Compose 的基本使用等知识点，最后通过 Dcoker Compose 介绍了接近实际开发的两个例子。 ',
+          number: 208,
+          color: 'red',
+          paic: '训练营'
+        },
+        {
+          img: 'https://dn-simplecloud.shiyanlou.com/1517283041138.png',
+          content: ' 使用 Python 实现深度神经网络 ',
+          text: ' 人工智能是目前比较火热的关键词之一，而神经网络可以看做是人工智能的一种具体实现方法。本课程将手把手教你使用 Python 实现一个深度神经网络，让你在实际动手的过程中理解深度学习的一些基本原理，带你真正入门深度学习。 ',
+          number: 4280,
+          color: 'yellow',
+          paic: '会员'
+        }
+      ]
+    }
   },
   mutations: {
 

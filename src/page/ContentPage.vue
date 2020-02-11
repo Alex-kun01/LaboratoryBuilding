@@ -6,15 +6,18 @@
     </div>
     <div class="boxCard">
           <title-bar class="title_bar1" :left="titlebar[1].left" :right="titlebar[1].right" />
+          <dyn-card class="dyn-card1" />
     </div>
     </div>
 </template>
 <script>
 import TitleBar from '../twolevel/TitleBar'
 import StaticCard from '../components/StaticCard'
+import DynCard from '../components/DynCard'
 export default {
   data () {
     return {
+    // 导航标题
       titlebar: [
         {
           left: '楼 + 实战课程',
@@ -29,7 +32,8 @@ export default {
   },
   components: {
     TitleBar,
-    StaticCard
+    StaticCard,
+    DynCard
   }
 }
 </script>
@@ -39,5 +43,8 @@ export default {
 }
 .contentPage .title_bar1{
     margin-top: 35px;
+}
+.contentPage .dyn-card1{
+  margin-bottom: 20px;
 }
 </style>
