@@ -2,7 +2,7 @@
     <!-- 动态卡片组件 -->
     <div class="dyncard">
         <div class="dyncard_item"
-        v-for="(item, index) in this.$store.state.dycList.f1"
+        v-for="(item, index) in dycList"
         :key="index"
         >
         <!-- 上面部分 -->
@@ -17,18 +17,15 @@
                 </div>
                 <div class="footer">
                     <div class="left">{{item.number}}</div>
-                    <div class="right">{{item.paic}}</div>
+                    <div class="right" :class="item.color">{{item.paic}}</div>
                 </div>
             </div>
         </div>
     </div>
 </template>
 <script>
-import { mapState } from 'vuex'
 export default {
-  components: {
-    ...mapState(['dycList'])
-  }
+  props: ['dycList']
 }
 </script>
 <style scoped>
@@ -44,6 +41,7 @@ export default {
     box-sizing: border-box;
     overflow: hidden;
     cursor: pointer;
+    margin: 0 10px;
 }
 .dyncard .dyncard_item img{
     width: 256px;
@@ -111,5 +109,11 @@ export default {
     line-height: 25px;
     padding: 0 10px;
     border-radius: 20px;
+}
+.dyncard .dyncard_item .move .footer>.red{
+    background-color: rgb(233, 106, 106);
+}
+.dyncard .dyncard_item .move .footer>.yellow{
+    background-color: rgb(247, 181, 59);
 }
 </style>
